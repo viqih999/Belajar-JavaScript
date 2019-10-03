@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; 
+    charset=UTF-8" />
+    <title>Belajar JavaScript</title>
+
+        <!--Dengan memberikan nilai angka ke dalam sebuah variabel, secara otomatis 
+        variabel tersebut akan bertipe angka (number). Variabel dengan tipe angka, akan 
+        memiliki method yang bisa digunakan untuk memproses data yang ada didalam 
+        varibel tersebut.-->
+
+        <!--Method toExponential digunakan untuk menampilkan angka menjadi 
+        tampilan scientific notation. Scientific Notation adalah tampilan angka dengan 1 digit 
+        sebelum tanda desimal, dan diikuti dengan tanda pangkat. Misalnya angka 123.45, 
+        jika ditulis kedalam bentuk scientific notation akan menjadi 1.23 x 10^2. Akan tetapi, 
+        bahasa pemograman umumnya mengganti penyebutan pangkat sepuluh ini menjadi 
+        karakter e atau E. Sehingga 1.23 x 10^2 ditulis menjadi 1.23e+2.-->
+        <script>
+        
+        a = 5000.123456789;
+        
+        b = a.toExponential();
+        
+        
+        c = a.toExponential(1);
+        
+        
+        console.log(b); // hasil: 5.000123456789e+3
+        
+        console.log(c); // hasil: 5.0e+3
+        
+        console.log(a.toExponential(5)); // hasil: 5.00012e+3
+        
+        console.log(a.toExponential(10)); // hasil: 5.0001234568e+3
+        
+        console.log(a.toExponential(20)); // hasil: 5.00012345678899964696e+3
+        </script>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang belajar method toExponential</p>
+</div>
+</body>
+</html>

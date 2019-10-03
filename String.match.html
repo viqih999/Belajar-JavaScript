@@ -1,0 +1,12 @@
+        
+        <!--Method String.match() berfungsi untuk menemukan string menggunakan 
+        regular expression. Method ini membutuhkan 1 buah argumen yang berisi format 
+        regular expression yang akan dicari. Hasil akhir method ini adalah array yang berisi 
+        data seluruh string yang ditemukan.
+        -->
+        <script>
+        var kalimat = "1 tambah 2 sama dengan 3";
+        var hasil = kalimat.match(/\d+/g); // cari semua angka
+        console.log(hasil); // hasil: ["1", "2", "3"]
+        </script>
+        

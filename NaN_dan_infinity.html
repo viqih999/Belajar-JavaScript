@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; 
+    charset=UTF-8" />
+    <title>Belajar JavaScript</title>
+
+        <!--Operasi matematika yang hasilnya ‘tidak terdefinisi’, tidak akan dianggap 
+        error di dalam JavaScript. Misalnya operasi pembagian sebuah angka dengan angka 
+        0, atau hasil dari akar kuadrat nilai negatif. Di dalam JavaScript, operasi seperti ini
+        diselesaikan dengan nilai NaN dan Infinity.-->
+
+        <!--Infinity
+        -Jika sebuah angka melewati nilai maksimum angka yang bisa ditampung di dalam 
+        JavaScript (disebut juga dengan istilah: overflow).
+        -Jika sebuah angka lebih besar dari angka negatif yang bisa ditampung (negative 
+        overflow).-->
+
+        <!--NaN
+        -Pembagian 0 dengan 0
+        -Pembagian infinity dengan infinity
+        -Akar kuadrat dari nilai negatif
+        -Operasi aritmatika dengan nilai yang bukan angka (dan tidak bisa dikonversi 
+        menjadi angka).
+        -->
+        <script>
+        
+        a = 5;
+        
+        b = 7;
+        
+        c = b / 0;
+        
+        console.log(c); // Hasil: Infinity (division by zero)
+        
+        d = 12 / 0;
+        
+        console.log(d); // Hasil: Infinity (division by zero)
+        
+        e = 1 + Math.pow(10,309);
+        
+        console.log(e); // Hasil: Infinity (overflow)
+        
+        f = -Math.pow(10,309) - 1;
+        
+        console.log(f); // Hasil: -Infinity (negative infinity)
+        
+        g = b + e;
+        
+        console.log(g); // Hasil: Infinity (karena e dan b infinity)
+        
+        h = 0/0;
+        
+        console.log(h); // Hasil: NaN
+        
+        i = Math.sqrt(-25);
+        
+        console.log(i); // Hasil: NaN (akar kuadrat negatif)
+        
+        j = c / d
+        
+        console.log(j); // Hasil: NaN (c dan d sama-sama bernilai infinity)
+        </script>
+</head>
+<body>
+<h1>Belajar JavaScript</h1>
+<p> Saya sedang belajar pengertian NaN dan Infinity JavaScript 
+</p>
+</div>
+</body>
+</html>

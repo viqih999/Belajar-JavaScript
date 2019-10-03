@@ -1,0 +1,107 @@
+        
+        <!--Operator sama dengan (==) adalah operator yang akan membandingkan 2 buah 
+        nilai atau variabel dan menghasilkan nilai true jika variabel tersebut bernilai sama. 
+        -->
+        <script>
+        var a = true;
+        var benar = true;
+        console.log(a==benar); // true
+         
+        var a = 12;
+        var b = 4;
+        console.log(a==b); // false
+         
+        var a = 7;
+        var b = "7";
+        console.log(a==b); // true !
+        </script>
+
+        <!--Operator identik dengan (===)Operator identikal === hampir sama dengan operator ==, yaitu 
+        membandingkan apakah 2 buah variabel atau hasil operasi program sama atau tidak. 
+        -->
+                <script>
+                var a = true;
+                var benar = true;
+                console.log(a===benar); // true
+                 
+                var a = 12;
+                var b = 4;
+                console.log(a===b); // false
+                 
+                var a = 7;
+                var b = "7";
+                console.log(a===b); // false !
+                 
+                var a = "7";
+                var b = "7";
+                console.log(a===b); // true
+                </script>
+
+
+        <!--Operator tidak sama dengan (!=) Operator != adalah kebalikan dari operator ==, dan akan menghasilkan nilai 
+        true jika hasil operasi 2 buah variabel yang dibandingkan tidak memiliki nilai yang 
+        sama.-->
+        <script>
+                var a = true;
+                var benar = true;
+                console.log(a!=benar); // false
+                 
+                var a = 12;
+                var b = 4;
+                console.log(a!=b); // true
+                 
+                var a = 7;
+                var b = "7";
+                console.log(a!=b); // false !
+                </script>
+
+        <!--Operator tidak identik dengan (!==) Jika operator != tidak mempertimbangkan tipe data, maka operator !== hanya 
+        akan false jika operator yang dibandingkan memiliki nilai yang sama dan juga tipe 
+        data yang sama.-->
+        <script>
+                var a = true;
+                var benar = true;
+                console.log(a!==benar); // false
+                 
+                var a = 12;
+                var b = 4;
+                console.log(a!==b); // true
+                 
+                var a = 7;
+                var b = "7";
+                console.log(a!==b); // true !
+                 
+                var a = "7";
+                var b = "7";
+                console.log(a!==b); // false
+                </script>
+
+
+        <!--Operator Kurang dari (<) dan Kurang sama dengan dari: (<=) Operator < dan <= hanya akan bernilai true jika variabel di sisi kiri operator 
+        memiliki nilai yang kurang dari variabel di sisi kanan -->
+        <script>
+                var a = 3;
+                var b = 4;
+                console.log(a<b); // true
+                console.log(a<=b); // true
+                 
+                var a = 5;
+                var b = 5;
+                console.log(a<b); // false
+                console.log(a<=b); // true
+                </script>
+                
+        
+        <!--Operator Besar dari (>) dan Besar sama dengan dari (>=) Operator > dan >= hanya akan bernilai true jika variabel di sisi kiri operator 
+        memiliki nilai yang lebih besar dari variabel di sisi kanan.-->
+        <script>
+                var a = 3;
+                var b = 4;
+                console.log(a>b); // false
+                console.log(a>=b); // false
+                var a = 5;
+                var b = 5;
+                console.log(a>b); // false
+                console.log(a>=b); // true
+                </script>
+
